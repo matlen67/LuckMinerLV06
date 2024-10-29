@@ -1,9 +1,7 @@
 # LuckMinerLV06
 
-## Diese Seite ist noch in Entstehung
-
-## Achtung!
-## Nutzung auf eigene Gefahr! Ich übernehme keine Haftung für Schäden jeglicher Art!
+## Achtung, Nutzung auf eigene Gefahr!
+## Ich übernehme keine Haftung für Schäden jeglicher Art!
 
 ### Nur mit LuckyMiner LV06 verwenden 
 

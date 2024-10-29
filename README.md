@@ -13,6 +13,7 @@ Die hier angebotene esp-miner.bin ändert die im NVS (kleiner Speicherbereich im
 Im August 2024 habe ich durch Zufall beim rum Google'n vom Minig mittels ESP32 gelesen. Da ich Hobbymäßig gerne mit ESP8266 und ESP32 rum programmiere bin ich letztendlich über NerdMiner zu den LuckyMinern gestoßen.
 Ich hatte mir über AliExpress ein Liligo ESP32-S3 bestellt. Angefixt vom Minig, bin ich dann auch bald auf die LuckyMinern und Bitaxe gestoßen. Zu dem Zeitpunkt kannte ich (Leider) noch nicht wirklich die Unterschiede und habe dann, aber auch ein wenig verständlich, drei LuckyMiner LV06 zu je ca. 70€ erworben.
 Zu dem Zeitpunkt hatte ich nur Shops gefunden die für einen Bitaxe Ultra zwischen 170€ - 240€ haben wollten, und das dann auch noch mit Bitcoin Zahlung. Und ca. 200€ zu um die 600€ sind halt für 'Ich spiel da mal ein wenig rum' schon ein krasser Preisunterschied.
+
 Das Bitaxe OpenSource Projekt ist schon mega krass, aber wer bitte soll PCB's selber bestellen und SMD's auflöten. Ja ich habe vor 20 Jahren, als es noch keine ESP's gab kleine Schaltungen selber mittels Eagle entworfen und in China (itead) fertigen lassen, und hinterher auch selber draht und SMD Bauteile verlötet. Heute möchte ich mir das aber nicht mehr antun.
 
 Getreu meinem Motte 'Was man flashen kann, wird geflasht' habe ich mir dann wohl irgendwelche factory bin's aufgespielt, die die Boardversion auf 204 angehoben haben. Von da an wollten die LuckyMiner nur noch sporadisch funktionieren. Nach gefühlen 20 mal 'Strom an / Strom aus' liefen die dann komischer weise bis zur nächsten Spannungsunterbrechung einwandfrei.
@@ -23,15 +24,16 @@ Ich bin nun nicht der mega Profi, und ich habe auch keine Lust noch tiefer in de
 ## Was mach diese esp-miner.bin?
 Ich habe einen kleinen patch in die main.c eigefügt, der Prüft ob die Boardversion = 204 ist, und dann die Boardversion im NVS Speicher mit 0.11 überschreibt 
 
- `// @matlen67
-    // check if boardversion = 204 change boardverion to string 0.11 (int = 0)
-    if (GLOBAL_STATE.board_version == 204) {
-        ESP_LOGI("matlen67 -> ", "detect boardverion = 204 in NVS");
-        nvs_config_set_string(NVS_CONFIG_BOARD_VERSION, "0.11");
-        GLOBAL_STATE.board_version = atoi(nvs_config_get_string(NVS_CONFIG_BOARD_VERSION, "000"));
-        ESP_LOGI("matlen67 -> ", "change boardverion to 0.11");
-    }`
-
+```c++
+ // @matlen67
+ // check if boardversion = 204 change boardverion to string 0.11 (int = 0)
+ if (GLOBAL_STATE.board_version == 204) {
+     ESP_LOGI("matlen67 -> ", "detect boardverion = 204 in NVS");
+     nvs_config_set_string(NVS_CONFIG_BOARD_VERSION, "0.11");
+     GLOBAL_STATE.board_version = atoi(nvs_config_get_string(NVS_CONFIG_BOARD_VERSION, "000"));
+     ESP_LOGI("matlen67 -> ", "change boardverion to 0.11");
+  }
+```
 #### ASIC bekommt keine Spannung Boardversion 204
 <img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/LuckyMiner_AxeOS_boardversion_204.png" width="256"> 
 

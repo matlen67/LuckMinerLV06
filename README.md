@@ -3,7 +3,8 @@
 ## Diese Seite ist noch in Entstehung
 
 ## Achtung!
-Nutzung auf eigene Gefahr! Ich übernehme keine Haftung für Schäden jeglicher Art!
+## Nutzung auf eigene Gefahr! Ich übernehme keine Haftung für Schäden jeglicher Art!
+
 ### Nur mit LuckyMiner LV06 verwenden 
 
 Meine LuckyMiner haben alle die Leiterplatten-Revision: XSL 24001PCV11 mit Datum 2024.03.20

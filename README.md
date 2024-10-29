@@ -22,7 +22,7 @@ Ich bin nun nicht der mega Profi, und ich habe auch keine Lust noch tiefer in de
 
 
 #### ASIC bekommt keine Spannung
-<img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/LuckyMiner_AxeOS_boardversion_204.png)" width="256"> 
+<img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/LuckyMiner_AxeOS_boardversion_204.png" width="256"> 
 
 <img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/LuckyMiner_boardversion_204_no_mining.png" width="512"> 
 

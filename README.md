@@ -44,6 +44,7 @@ Ich habe einen kleinen patch ab Zeile 59 in die main.c eingefügt, der Prüft ob
 <img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/LuckyMiner_boardversion_204_no_mining.png" width="512"> 
 
 ### Patch funktioniert
+Auch mit Schreibfehler :)
 
 <img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/luckyMiner_bootlog.png" width="512"> 
 

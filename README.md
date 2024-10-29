@@ -9,6 +9,7 @@ Meine LuckyMiner haben alle die Leiterplatten-Revision: XSL 24001PCV11 mit Datum
 
 Die hier angebotene esp-miner.bin ändert die im NVS (kleiner Speicherbereich im ES32) geschriebene boardversion von 204 auf 0.11
 
+
 ### Hintergrund
 
 Im August 2024 habe ich durch Zufall beim rum Google'n vom Minig mittels ESP32 gelesen. Da ich Hobbymäßig gerne mit ESP8266 und ESP32 rum programmiere bin ich letztendlich über NerdMiner zu den LuckyMinern gestoßen.

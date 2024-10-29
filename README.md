@@ -23,14 +23,14 @@ Ich bin nun nicht der mega Profi, und ich habe auch keine Lust noch tiefer in de
 ## Was mach diese esp-miner.bin?
 Ich habe einen kleinen patch in die main.c eigefügt, der Prüft ob die Boardversion = 204 ist, und dann die Boardversion im NVS Speicher mit 0.11 überschreibt 
 
- // @matlen67
+ `// @matlen67
     // check if boardversion = 204 change boardverion to string 0.11 (int = 0)
     if (GLOBAL_STATE.board_version == 204) {
         ESP_LOGI("matlen67 -> ", "detect boardverion = 204 in NVS");
         nvs_config_set_string(NVS_CONFIG_BOARD_VERSION, "0.11");
         GLOBAL_STATE.board_version = atoi(nvs_config_get_string(NVS_CONFIG_BOARD_VERSION, "000"));
         ESP_LOGI("matlen67 -> ", "change boardverion to 0.11");
-    }
+    }`
 
 #### ASIC bekommt keine Spannung Boardversion 204
 <img src="https://github.com/matlen67/LuckMinerLV06/blob/main/image/LuckyMiner_AxeOS_boardversion_204.png" width="256"> 

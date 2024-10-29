@@ -30,10 +30,10 @@ Ich habe einen kleinen patch ab Zeile 59 in die main.c eingefügt, der Prüft ob
  // @matlen67
  // check if boardversion = 204 change boardverion to string 0.11 (int = 0)
  if (GLOBAL_STATE.board_version == 204) {
-     ESP_LOGI("matlen67 -> ", "detect boardverion = 204 in NVS");
+     ESP_LOGI("matlen67 -> ", "detect boardversion = 204 in NVS");
      nvs_config_set_string(NVS_CONFIG_BOARD_VERSION, "0.11");
      GLOBAL_STATE.board_version = atoi(nvs_config_get_string(NVS_CONFIG_BOARD_VERSION, "000"));
-     ESP_LOGI("matlen67 -> ", "change boardverion to 0.11");
+     ESP_LOGI("matlen67 -> ", "change boardversion to 0.11");
   }
 ```
 

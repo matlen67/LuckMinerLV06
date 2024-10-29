@@ -22,7 +22,7 @@ Getreu meinem Motte 'Was man flashen kann, wird geflasht' habe ich mir dann wohl
 Ich bin nun nicht der mega Profi, und ich habe auch keine Lust noch tiefer in den Code einzusteigen (ich will ja nur ein wenig Minen), aber wie ich das sehe wurde nach den ersten Boardrevisionen 0.11/0.12 usw. bei den 2xx Board's noch ein Mosfet zu einem Spannungsregler verbaut der als Power_Enabled bezeichnet wird und über den GPIO10 des ESP32 angesteuert wird. Im Sourcecode finden sich einige Stellen wo das Powermanagement duch die Boardversion gesteuert wird. Wahrscheinlich hat der LuckMiner den Mosfet nicht, da er auf der Leiterplattenrevision 0.11 aufbaut und startet dann nicht, da die Software auf irgend eine Rückmeldung wartet. Merkwürdig ist nur das es nach 10 -20 mal Steckerziehen dann doch los geht. Evtl ein Bug? Oder so gewollt :)
 
 ## Was mach diese esp-miner.bin?
-Ich habe einen kleinen patch ab Zeile 59 in die main.c eigefügt, der Prüft ob die Boardversion = 204 ist, und dann die Boardversion im NVS Speicher mit 0.11 überschreibt 
+Ich habe einen kleinen patch ab Zeile 59 in die main.c eingefügt, der Prüft ob die Boardversion = 204 ist, und dann die Boardversion im NVS Speicher mit 0.11 überschreibt 
 
 ```c++
  // @matlen67

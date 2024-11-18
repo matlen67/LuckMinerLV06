@@ -1,4 +1,4 @@
-primarycolor change from red (#f80421) to blue (#2883d8)
+_variables.sccs -> $primaryColor change from red (#f80421) to blue (#2883d8)
 
 
 #### AxeOS v2.4.0

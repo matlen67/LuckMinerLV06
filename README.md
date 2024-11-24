@@ -1,4 +1,4 @@
-in# LuckMinerLV06 Boardversion 204
+# Lucky Miner LV06 Boardversion 204
 
 ## Achtung, Nutzung auf eigene Gefahr!
 ## Ich übernehme keine Haftung für Schäden jeglicher Art!
